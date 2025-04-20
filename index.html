@@ -1,65 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Moderator Application – Reliable, Multilingual & Community-Focused</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
 
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(ellipse at center, #000000 0%, #0f0f1c 100%);
+      color: #0ff;
+      overflow-x: hidden;
+      animation: backgroundPulse 10s infinite alternate;
+    }
+
+    @keyframes backgroundPulse {
+      0% { background-color: #0f0f1c; }
+      100% { background-color: #090918; }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.6);
+      border: 3px solid #0ff;
+      border-radius: 20px;
+      box-shadow: 0 0 30px #0ff;
+      position: relative;
+      z-index: 10;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    .profile-pic {
+      float: right;
+      border-radius: 50%;
+      border: 3px solid #0ff;
+      width: 100px;
+      height: 100px;
+      margin-left: 20px;
+      object-fit: cover;
+      box-shadow: 0 0 10px #0ff;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 20px;
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffff;
+    }
+
+    .highlight {
+      color: #ff00ff;
+      font-weight: bold;
+    }
+
+    .contacts {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .contacts a {
+      color: #0ff;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+    }
+
+    audio {
+      display: block;
+      margin: 30px auto;
+    }
+
+    @media screen and (max-width: 600px) {
+      .profile-pic {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
+    }
+  </style>
+</head>
 <body>
   <div class="container">
-    <div class="header">
-      <div class="title">
-        <h1><span class="highlight">Moderator Application</span></h1>
-        <p class="subtitle">Reliable, Multilingual & Community-Focused</p>
-      </div>
-      <div class="profile-pic">
-        <img src="https://images.app.goo.gl/b7ygGqdT8vTKsNm7A" alt="Profile Picture">
-      </div>
-    </div>
+    <img src="https://i.ibb.co/d6TgwGx/karthik-profile.jpg" alt="Karthik" class="profile-pic" />
+    <div class="title">Moderator Application – Reliable, Multilingual & Community-Focused</div>
 
-    <form class="application-form">
-      <label for="recipient">Dear</label>
-      <input type="text" id="recipient" placeholder="Server Owner/Community Team">
+    <p>Dear <span class="highlight">[Server Owner/Community Team]</span>,</p>
 
-      <p>My name is <span class="highlight">Sreekarthik Randheesh</span>, though I am best known online as <span class="highlight">Karthik</span>. I’m a <span class="highlight">13-year-old student</span> and content creator with a passion for <span class="highlight">community engagement</span>, and I would like to formally apply for a Moderator position within your <span class="highlight">Discord server</span> or <span class="highlight">Roblox community</span>.</p>
+    <p>My name is <span class="highlight">Sreekarthik Randheesh</span>, though I am best known online as <span class="highlight">Karthik</span>. I’m a <span class="highlight">13-year-old student and content creator</span> with a passion for community engagement, and I would like to formally apply for a <span class="highlight">Moderator</span> position within your Discord server or Roblox community.</p>
 
-      <p>Over the past year, I’ve gained hands-on experience managing my own community and assisting in others:</p>
-      <ul>
-        <li><span class="highlight">1 year</span> of moderation experience in a Discord server of 100+ members (now archived).</li>
-        <li><span class="highlight">2 months</span> of moderation in a Roblox game with 200–500 users.</li>
-        <li>Owner of <span class="highlight">NeonSynk</span>, managing engagement and rule enforcement.</li>
-      </ul>
+    <div class="section-title">Experience</div>
+    <ul>
+      <li>1 year of moderation experience in a Discord server of 100+ members (now archived, from an earlier account).</li>
+      <li>2 months of moderation in a Roblox game with an active player base of 200–500 users.</li>
+      <li>Current owner of a server called <span class="highlight">NeonSynk</span>, where I manage engagement, support members, and handle rule enforcement.</li>
+    </ul>
 
-      <p>I am fluent in <span class="highlight">English, Malayalam, Tamil, and Hindi</span> and also speak <span class="highlight">Urdu</span>. My strengths include:</p>
-      <ul>
-        <li>Answering member questions with clarity and patience.</li>
-        <li>Fair handling of rule violations.</li>
-        <li>Creating a welcoming, positive space.</li>
-      </ul>
+    <div class="section-title">Languages</div>
+    <p>Fluent in <span class="highlight">English, Malayalam, Tamil, and Hindi</span> (spoken and written), and conversational in <span class="highlight">Urdu</span>.</p>
 
-      <p>I’m unavailable <span class="highlight">Fridays and Saturdays</span>, but I’m active the rest of the week.</p>
+    <div class="section-title">Strengths</div>
+    <ul>
+      <li>Answering questions with clarity and respect.</li>
+      <li>Fair handling of rule violations.</li>
+      <li>Creating a welcoming, positive atmosphere.</li>
+    </ul>
 
-      <p>Moderating is a responsibility I value. I want to help others, solve problems, and ensure everyone has a fair experience. I act with <span class="highlight">integrity, professionalism</span>, and <span class="highlight">respect</span>.</p>
+    <div class="section-title">Availability</div>
+    <p>Unavailable on <span class="highlight">Fridays and Saturdays</span>, but responsive throughout the rest of the week.</p>
 
-      <p>If selected, I will represent your community with maturity and commitment. Thank you for your consideration.</p>
+    <div class="section-title">Commitment</div>
+    <p>Moderating is not just a role I want—it’s a <span class="highlight">responsibility I value</span>. I strive to contribute to something meaningful, solve problems, and help others feel safe and respected.</p>
 
-      <div class="contacts">
-        <p><i class="fab fa-discord"></i> <strong>Discord:</strong> master_chief4real</p>
-        <p><i class="fab fa-roblox"></i> <strong>Roblox:</strong> KARTHIK_BOSS14</p>
-        <p><i class="fas fa-envelope"></i> <strong>Gmail:</strong> karthiksreeran@gmail.com</p>
-      </div>
-    </form>
+    <p>If selected, I will represent your community with <span class="highlight">maturity and commitment</span>. Thank you for considering my application.</p>
+
+    <div class="section-title">Sincerely,</div>
+    <p>
+      <span class="highlight">Karthik (Sreekarthik Randheesh)</span><br />
+      Discord: <span class="highlight">master_chief4real</span><br />
+      Roblox: <span class="highlight">KARTHIK_BOSS14</span><br />
+      Email: <a href="mailto:karthiksreeran@gmail.com">karthiksreeran@gmail.com</a>
+    </p>
+
+    <audio controls autoplay loop>
+      <source src="https://files.catbox.moe/wbnnk7.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
   </div>
-  <audio autoplay loop>
-    <source src="cyberpunk-music.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-</body>
 
-              </html>
-              
+  <footer>Made with passion by Karthik | NeonSynk Moderator Application</footer>
+</body>
+                                                                           </html>
