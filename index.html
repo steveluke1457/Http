@@ -1,159 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Moderator Application – Reliable, Multilingual & Community-Focused</title>
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moderator Resume - Karthik</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
-
     body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top left, #0ff, #00bcd4);
+      color: #333;
       margin: 0;
-      padding: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: radial-gradient(ellipse at center, #000000 0%, #0f0f1c 100%);
-      color: #0ff;
-      overflow-x: hidden;
-      animation: backgroundPulse 10s infinite alternate;
-    }
+      padding: 30px 20px;
+      animation: fadeIn 1s ease-in-out;
+    }@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-    @keyframes backgroundPulse {
-      0% { background-color: #0f0f1c; }
-      100% { background-color: #090918; }
-    }
+.container {
+  background-color: #ffffffee;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 850px;
+  margin: auto;
+  box-shadow: 0 8px 30px rgba(0, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  animation: slideUp 0.6s ease-in-out;
+}
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px;
-      background: rgba(0, 0, 0, 0.6);
-      border: 3px solid #0ff;
-      border-radius: 20px;
-      box-shadow: 0 0 30px #0ff;
-      position: relative;
-      z-index: 10;
-    }
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
 
-    .title {
-      font-size: 28px;
-      font-weight: 700;
-      text-align: center;
-      margin-bottom: 20px;
-      color: #00ffff;
-      text-shadow: 0 0 10px #00ffff;
-    }
+h1 {
+  font-size: 2.2rem;
+  color: #006d77;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    .profile-pic {
-      float: right;
-      border-radius: 50%;
-      border: 3px solid #0ff;
-      width: 100px;
-      height: 100px;
-      margin-left: 20px;
-      object-fit: cover;
-      box-shadow: 0 0 10px #0ff;
-    }
+h2 {
+  color: #00838f;
+  margin-top: 25px;
+}
 
-    p {
-      line-height: 1.6;
-      font-size: 16px;
-    }
+p, li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
-    .section-title {
-      font-weight: bold;
-      font-size: 18px;
-      margin-top: 20px;
-      color: #00ffff;
-      text-shadow: 0 0 5px #00ffff;
-    }
+.icon {
+  width: 28px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
 
-    .highlight {
-      color: #ff00ff;
-      font-weight: bold;
-    }
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
 
-    .contacts {
-      margin-top: 20px;
-      font-size: 16px;
-    }
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+}
 
-    .contacts a {
-      color: #0ff;
-      text-decoration: none;
-      display: inline-block;
-      margin-right: 15px;
-    }
+button {
+  background-color: #00acc1;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: block;
+  margin: 30px auto 0;
+}
 
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      color: #888;
-      font-size: 14px;
-    }
+button:hover {
+  background-color: #007c91;
+  transform: scale(1.05);
+}
 
-    audio {
-      display: block;
-      margin: 30px auto;
-    }
-
-    @media screen and (max-width: 600px) {
-      .profile-pic {
-        float: none;
-        display: block;
-        margin: 0 auto 20px;
-      }
-    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="https://i.ibb.co/d6TgwGx/karthik-profile.jpg" alt="Karthik" class="profile-pic" />
-    <div class="title">Moderator Application – Reliable, Multilingual & Community-Focused</div>
+  <div class="container" id="resume-content">
+    <h1>Moderator Application – Reliable, Multilingual & Community-Focused</h1><label for="recipient">To: (Server Owner/Community Team)</label>
+<input type="text" id="recipient" placeholder="Enter server owner or team name here" />
 
-    <p>Dear <span class="highlight">[Server Owner/Community Team]</span>,</p>
+<p>Dear <span id="recipient-name">[Server Owner/Community Team]</span>,</p>
 
-    <p>My name is <span class="highlight">Sreekarthik Randheesh</span>, though I am best known online as <span class="highlight">Karthik</span>. I’m a <span class="highlight">13-year-old student and content creator</span> with a passion for community engagement, and I would like to formally apply for a <span class="highlight">Moderator</span> position within your Discord server or Roblox community.</p>
+<p>My name is <strong>Sreekarthik Randheesh</strong>, though I am best known online as <strong>Karthik</strong>. I’m a 13-year-old student and content creator with a passion for community engagement, and I would like to formally apply for a Moderator position within your Discord server or Roblox community.</p>
 
-    <div class="section-title">Experience</div>
-    <ul>
-      <li>1 year of moderation experience in a Discord server of 100+ members (now archived, from an earlier account).</li>
-      <li>2 months of moderation in a Roblox game with an active player base of 200–500 users.</li>
-      <li>Current owner of a server called <span class="highlight">NeonSynk</span>, where I manage engagement, support members, and handle rule enforcement.</li>
-    </ul>
+<h2>Experience</h2>
+<ul>
+  <li>1 year of moderation experience in a Discord server of 100+ members (now archived).</li>
+  <li>2 months of moderation in a Roblox game with 200–500 active users.</li>
+  <li>Current owner of <strong>NeonSynk</strong>, managing engagement and rule enforcement.</li>
+</ul>
 
-    <div class="section-title">Languages</div>
-    <p>Fluent in <span class="highlight">English, Malayalam, Tamil, and Hindi</span> (spoken and written), and conversational in <span class="highlight">Urdu</span>.</p>
+<h2>Language Skills</h2>
+<p>Fluent in English, Malayalam, Tamil, Hindi (spoken and written), and conversational Urdu.</p>
 
-    <div class="section-title">Strengths</div>
-    <ul>
-      <li>Answering questions with clarity and respect.</li>
-      <li>Fair handling of rule violations.</li>
-      <li>Creating a welcoming, positive atmosphere.</li>
-    </ul>
+<h2>Strengths</h2>
+<ul>
+  <li>Clear and respectful communication.</li>
+  <li>Fair and firm rule enforcement.</li>
+  <li>Creating a welcoming, positive environment.</li>
+</ul>
 
-    <div class="section-title">Availability</div>
-    <p>Unavailable on <span class="highlight">Fridays and Saturdays</span>, but responsive throughout the rest of the week.</p>
+<h2>Availability</h2>
+<p>Unavailable on Fridays and Saturdays. Available throughout the rest of the week at various times.</p>
 
-    <div class="section-title">Commitment</div>
-    <p>Moderating is not just a role I want—it’s a <span class="highlight">responsibility I value</span>. I strive to contribute to something meaningful, solve problems, and help others feel safe and respected.</p>
+<h2>Why I Want This Role</h2>
+<p>Moderating is not just a role I want—it’s a responsibility I value. I want to help others, solve problems, and ensure a fair and positive experience for all. I approach this role with integrity, professionalism, and respect.</p>
 
-    <p>If selected, I will represent your community with <span class="highlight">maturity and commitment</span>. Thank you for considering my application.</p>
+<p>If selected, I will represent your community with maturity and commitment. I’d be glad to answer any questions or participate in a trial.</p>
 
-    <div class="section-title">Sincerely,</div>
-    <p>
-      <span class="highlight">Karthik (Sreekarthik Randheesh)</span><br />
-      Discord: <span class="highlight">master_chief4real</span><br />
-      Roblox: <span class="highlight">KARTHIK_BOSS14</span><br />
-      Email: <a href="mailto:karthiksreeran@gmail.com">karthiksreeran@gmail.com</a>
-    </p>
+<p>Sincerely,<br/>
+<strong>Karthik (Sreekarthik Randheesh)</strong></p>
 
-    <audio controls autoplay loop>
-      <source src="https://files.catbox.moe/wbnnk7.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-  </div>
+<div class="contact-icons">
+  <img class="icon" src="https://img.icons8.com/ios-filled/50/000000/discord-logo.png" title="master_chief4real" />
+  <img class="icon" src="https://img.icons8.com/ios-filled/50/000000/roblox.png" title="KARTHIK_BOSS14" />
+  <img class="icon" src="https://img.icons8.com/ios-filled/50/000000/gmail.png" title="karthiksreeran@gmail.com" />
+</div>
 
-  <footer>Made with passion by Karthik | NeonSynk Moderator Application</footer>
-</body>
-                                                                           </html>
+  </div><button onclick="downloadPDF()">Download as PDF</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>  <script>
+    const recipientInput = document.getElementById('recipient');
+    const recipientNameSpan = document.getElementById('recipient-name');
+
+    recipientInput.addEventListener('input', () => {
+      recipientNameSpan.textContent = recipientInput.value || '[Server Owner/Community Team]';
+    });
+
+    function downloadPDF() {
+      const element = document.getElementById('resume-content');
+      html2pdf().from(element).save('Moderator_Resume_Karthik.pdf');
+    }
+  </script></body>
+    </html>
