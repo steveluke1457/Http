@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moderator Resume - Karthik</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <h1>Moderator Application – Reliable, Multilingual & Community-Focused</h1>
+
+  <textarea id="recipient" placeholder="Dear [Server Owner/Community Team],"></textarea>
+
+  <div id="letter">
+    <p>My name is Sreekarthik Randheesh, though I am best known online as Karthik. I’m a 13-year-old student and content creator with a passion for community engagement, and I would like to formally apply for a Moderator position within your Discord server or Roblox community.</p>
+
+    <p>Over the past year, I’ve gained hands-on experience managing my own community and assisting in others:</p>
+
+    <ul>
+      <li>1 year of moderation experience in a Discord server of 100+ members (now archived, from an earlier account).</li>
+      <li>2 months of moderation in a Roblox game with an active player base of 200–500 users.</li>
+      <li>Current owner of a server called NeonSynk, where I manage engagement, support members, and handle rule enforcement.</li>
+    </ul>
+
+    <p>I am fluent in English, Malayalam, Tamil, and Hindi (both spoken and written), and can also communicate in spoken Urdu, which enables me to assist a wide and diverse player/user base effectively. My strengths include:</p>
+
+    <ul>
+      <li>Answering player and member questions in a clear, respectful, and patient manner.</li>
+      <li>Maintaining fairness while handling rule violations.</li>
+      <li>Creating a welcoming atmosphere for new users and encouraging a positive environment.</li>
+    </ul>
+
+    <p>While I’m not available on Fridays and Saturdays, I am active at various times throughout the rest of the week and can respond promptly to server or community needs.</p>
+
+    <p>Moderating is not just a role I want—it’s a responsibility I value. I’ve always aspired to be part of something bigger, where I can use my strengths to help others, solve problems, and ensure that everyone has a fair and positive experience within the game or server. I take my role seriously and act with integrity, professionalism, and respect at all times.</p>
+
+    <p>If selected, I will do my absolute best to represent your community with maturity and commitment. Thank you for considering my application—I would be glad to answer any further questions or participate in a trial if required.</p>
+
+    <p>Sincerely,<br/>
+    Karthik (Sreekarthik Randheesh)</p>
+
+    <div class="contact-icons">
+      <span class="tooltip"><i class="fab fa-discord"></i><span class="tooltiptext">master_chief4real</span></span>
+      <span class="tooltip"><i class="fab fa-roblox"></i><span class="tooltiptext">KARTHIK_BOSS14</span></span>
+      <span class="tooltip"><i class="fab fa-google"></i><span class="tooltiptext">karthiksreeran@gmail.com</span></span>
+    </div>
+  </div>
+
+  <button onclick="downloadPDF()">Download as PDF</button>
+
+  <audio autoplay loop>
+    <source src="Infraction-Funk-Town-pr.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    async function downloadPDF() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+      const recipient = document.getElementById("recipient").value;
+      const content = document.getElementById("letter").innerText;
+      const fullText = recipient + "\n\n" + content;
+      const lines = doc.splitTextToSize(fullText, 180);
+      doc.setTextColor(20, 255, 255);
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(12);
+      doc.text(lines, 15, 20);
+      doc.save("Karthik_Moderator_Application.pdf");
+    }
+  </script>
+</body>
+</html>
